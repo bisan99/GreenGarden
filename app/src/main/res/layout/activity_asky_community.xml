@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="* Ask Community *"
+        android:gravity="center"
+        android:layout_margin="20dp"
+
+        />
+
+    <TableRow android:layout_width="326dp">
+
+        <TextView
+
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Enter your Question or Advice"
+
+            />
+
+        <EditText
+            android:id="@+id/edtQues"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:text="Who will view your post?"
+            android:layout_marginBottom="10dp"
+
+            />
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radio_pirates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Farmers"
+                android:onClick="OnClickFarmer"/>
+            <RadioButton android:id="@+id/radio_ninjas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agronomists"
+                android:onClick="OnClickAgronomists"/>
+        </RadioGroup>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Select Picture" />
+
+        <Button
+            android:id="@+id/btnSelectPhoto"
+            android:layout_width="154dp"
+            android:layout_height="168dp"
+            android:background="@drawable/camera" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnClickPost"
+            android:text="Post" />
+
+    </TableRow>
+    <TableRow>
+<TextView
+    android:id="@+id/textview1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+        <ImageView
+            android:id="@+id/viewImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera" />
+    </TableRow>
+
+</TableLayout>
