@@ -43,10 +43,11 @@ public class AskyCommunity extends AppCompatActivity {
             }
         });
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds options to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.bottom_navigation, menu);
         return true;
     }
     private void selectImage() {
@@ -77,6 +78,7 @@ public class AskyCommunity extends AppCompatActivity {
         });
         builder.show();
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         TextView textview1 = findViewById(R.id.textview1);
@@ -137,6 +139,7 @@ public class AskyCommunity extends AppCompatActivity {
                     viewImage.setImageBitmap(thumbnail);
                 }
             }
+
         }
 
     }
